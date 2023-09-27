@@ -1,0 +1,19 @@
+/* .slick-list {
+    width: 55.6875rem;
+    height: 39.375rem;
+} */
+
+.slick-prev,
+.slick-next {
+    z-index: 99;
+}
+
+.slick-prev:before,
+.slick-next:before {
+    opacity: 0;
+}
+
+.slick-prev:hover:before,
+.slick-next:hover:before {
+    opacity: 0;
+}

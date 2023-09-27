@@ -1,0 +1,15 @@
+.main {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.divider {
+    width: 5rem;
+}
+
+.border {
+    border: 0.0625rem solid rgb(77, 77, 77);
+}

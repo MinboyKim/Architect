@@ -1,25 +1,61 @@
-import logo from './logo.svg';
-import './App.css';
+import React from "react";
+import { BrowserRouter, Routes, Route } from "react-router-dom";
+import { useMediaQuery } from "react-responsive";
+
+import Header from "./components/Header/Header";
+import Main from "./components/Main/Main";
+import Portfolio from "./components/Portfolio/Portfolio";
+import Academic from "./components/Academic/Academic";
+import Profile from "./components/Profile/Profile";
+import Footer from "./components/Footer/Footer";
+import ScrollToTop from "./ScrollToTop";
+import { meta } from "./db";
+
+import "./App.css";
+import Project from "./components/Project/Project";
 
 function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
+    const isMobile = useMediaQuery({
+        query: "(max-width:768px)",
+    });
+
+    return (
+        <div
+            className={`${isMobile ? "mApp" : "App"}`}
+            onContextMenu={(e) => e.preventDefault()}
         >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+            <BrowserRouter>
+                <ScrollToTop />
+                <div className="wrapper">
+                    <Header />
+                    <Routes>
+                        <Route path="/" element={<Main />}></Route>
+                        <Route
+                            path="/portfolio"
+                            element={<Portfolio />}
+                        ></Route>
+                        <Route path="/academic" element={<Academic />}></Route>
+                        {meta.map((project, index) => {
+                            return (
+                                <Route
+                                    key={index}
+                                    path={`/${project.link}`}
+                                    element={<Project title={project.title} />}
+                                ></Route>
+                            );
+                        })}
+                        <Route path="/profile" element={<Profile />}></Route>
+                        <Route path="/index.html" element={<Main />}></Route>
+                        <Route
+                            path="*"
+                            element={<h1>404 Not Found 😭</h1>}
+                        ></Route>
+                    </Routes>
+                    <Footer />
+                </div>
+            </BrowserRouter>
+        </div>
+    );
 }
 
 export default App;

@@ -1,0 +1,18 @@
+.wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.wrapper img {
+    width: 40.625rem;
+}
+
+.border {
+    border: 0.0625rem solid rgb(218, 218, 218);
+}
+
+.title {
+    margin-top: 1.25rem;
+}

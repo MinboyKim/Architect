@@ -1,0 +1,73 @@
+.popup {
+    background-color: white;
+    position: absolute;
+    top: 130%;
+    left: 80%;
+    transform: translateX(-60%);
+    z-index: 1;
+}
+
+.popup__content {
+    width: 14rem;
+    height: 25rem;
+    border: 0.0625rem solid black;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 1.25rem;
+    box-sizing: border-box;
+}
+
+.popup__content__profile,
+.popup__content__portfolio,
+.popup__content__academic {
+    font-family: AppleSDGothicNeoM;
+}
+
+.popup__content > * {
+    margin-bottom: 1.875rem;
+}
+
+.popup__content__contact {
+    margin-top: 1.5625rem;
+    margin-bottom: 0.625rem;
+    font-size: 0.8rem;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.emailText {
+    margin-bottom: 0.625rem;
+}
+
+.popup__content__insta {
+    width: 100%;
+    margin-bottom: 0rem;
+}
+
+.popup__content__insta a {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    justify-content: space-between;
+}
+
+.qr {
+    width: 1.875rem;
+    height: 1.875rem;
+    justify-self: flex-end;
+}
+
+.popup__content__insta img:first-child {
+    width: 1.25rem;
+    height: 1.25rem;
+    opacity: 0.5;
+}
+
+.popup__content__insta__text {
+    font-size: 0.7rem;
+    opacity: 0.8;
+    margin-right: 3.125rem;
+}

@@ -1,0 +1,19 @@
+.slick-list {
+    width: 56.25rem;
+    height: 40.0625rem;
+}
+
+.slick-prev,
+.slick-next {
+    top: 100%;
+}
+
+.slick-prev {
+    left: 45%;
+    transform: translateX(-50%);
+}
+
+.slick-next {
+    right: 45%;
+    transform: translateX(50%);
+}

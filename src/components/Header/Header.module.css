@@ -1,0 +1,40 @@
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.board {
+    width: 10rem;
+    height: 10rem;
+    position: absolute;
+}
+
+.logo {
+    width: 9.6rem;
+}
+
+.headerImg {
+    width: 10.6rem;
+    margin-top: 0.625rem;
+    cursor: pointer;
+}
+
+.popupWrapper {
+    position: relative;
+}
+
+.popupWrapper:hover .popup {
+    display: block;
+}
+
+.back {
+    z-index: -1;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -30%);
+    background-color: aqua;
+    width: 12.5rem;
+    height: 6.25rem;
+}

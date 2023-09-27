@@ -1,0 +1,66 @@
+.wrapper {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    margin-top: 1.25rem;
+}
+
+.content {
+    height: 100%;
+}
+
+.dy {
+    width: 15%;
+}
+
+.dy img {
+    width: 60%;
+    margin-left: 1.5rem;
+}
+
+.mail {
+    width: 1rem;
+}
+
+.instaImg {
+    width: 1rem;
+    margin-right: 5px;
+}
+
+.name {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 1.25rem;
+    font-family: AppleSDGothicNeoM;
+}
+
+.name span:first-child {
+    margin-bottom: 0.3125rem;
+}
+
+.intro {
+    margin-bottom: 1.25rem;
+}
+
+.contact {
+    display: flex;
+    margin-bottom: 1.25rem;
+    height: 100%;
+}
+
+.insta {
+    display: flex;
+    align-items: center;
+}
+
+.insta div {
+    margin-left: 0.3125rem;
+}
+
+.contact__container {
+    margin-left: 0.625rem;
+}
+
+.mail__container {
+    margin-bottom: 1.25rem;
+}
