@@ -1,3 +1,3 @@
 # DongYoungKim's Portfolio
 
-# [link](kimdongyoung.kr)
+# [link](https://kimdongyoung.kr/)
