@@ -4,7 +4,10 @@ const Introduction = () => {
     return (
         <div className={style.wrapper}>
             <div className={style.dy}>
-                <img src={`${process.env.PUBLIC_URL}/img/util/dy.png`} />
+                <img
+                    src={`${process.env.PUBLIC_URL}/img/util/dy.png`}
+                    alt="dy"
+                />
             </div>
             <div className={style.content}>
                 <div className={style.name}>
@@ -17,9 +20,15 @@ const Introduction = () => {
                 <div className={style.contact}>
                     <span>Contact for Inquiries &nbsp;-</span>
                     <div className={style.contact__container}>
-                        <a target="_blank" href="mailto:97kimdy@gmail.com">
+                        <a
+                            rel="noreferrer"
+                            target="_blank"
+                            href="mailto:97kimdy@gmail.com"
+                        >
                             <div className={style.mail__container}>
                                 <img
+                                    alt="mail"
+                                    rel="noreferrer"
                                     className={style.mail}
                                     src={`${process.env.PUBLIC_URL}/img/util/mail.png`}
                                 />{" "}
@@ -32,6 +41,7 @@ const Introduction = () => {
                                 href="https://www.instagram.com/dongvoung/"
                             >
                                 <img
+                                    alt="insta"
                                     className={style.instaImg}
                                     src={`${process.env.PUBLIC_URL}/img/popup/insta.png`}
                                 />{" "}
