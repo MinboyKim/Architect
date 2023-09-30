@@ -534,6 +534,12 @@ export const curriculumVitae = [
                 detail: "수상예정",
             },
             {
+                year: "2023. 09",
+                title: "2023 Gyeongsangbuk-do Architecture Competition",
+                description: "KIRA",
+                detail: "Special Prize",
+            },
+            {
                 year: "2023. 01",
                 title: "Young Architects Competition - Extinction Museum",
                 description: "YAC",
