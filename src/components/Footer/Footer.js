@@ -40,9 +40,15 @@ const Footer = () => {
                 </footer>
             ) : (
                 <footer className={style.mFooter}>
-                    <span className={style.text}>
-                        | E-Mail : 97kimdy@gmail.com
-                    </span>
+                    <a
+                        rel="noreferrer"
+                        target="_blank"
+                        href="mailto:97kimdy@gmail.com"
+                    >
+                        <span className={style.text}>
+                            | E-Mail : 97kimdy@gmail.com
+                        </span>
+                    </a>
                     <span className={style.text}>
                         | Phone : + 82) 1033063248
                     </span>
