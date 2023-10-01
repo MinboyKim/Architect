@@ -26,7 +26,7 @@ function App() {
         >
             <BrowserRouter>
                 <ScrollToTop />
-                <div className="wrapper">
+                <div className={`${isMobile ? "mWrapper" : "wrapper"}`}>
                     <Header />
                     <Routes>
                         <Route path="/" element={<Main />}></Route>

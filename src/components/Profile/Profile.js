@@ -1,3 +1,5 @@
+import { useMediaQuery } from "react-responsive";
+
 import Section from "./Section";
 import Experience from "./Experience";
 import Internship from "./Internship";
@@ -7,9 +9,10 @@ import { curriculumVitae, extraCurricular } from "../../db";
 import style from "./Profile.module.css";
 
 const Profile = () => {
+    const isMobile = useMediaQuery({ query: "(max-width: 768px)" });
     return (
         <div className={style.wrapper}>
-            <div className={style.sections}>
+            <div className={!isMobile ? style.sections : style.mSections}>
                 <Section name="PROFILE">
                     <Introduction />
                 </Section>

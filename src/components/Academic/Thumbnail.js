@@ -1,10 +1,14 @@
 import { useState } from "react";
 import { Link } from "react-router-dom";
+import { useMediaQuery } from "react-responsive";
 
 import style from "./Thumbnail.module.css";
 
 const Thumbnail = ({ link, image, title }) => {
     const [isHovered, setIsHovered] = useState(false);
+    const isMobile = useMediaQuery({
+        query: "(max-width:768px)",
+    });
 
     const handleMouseEnter = () => {
         setIsHovered(true);
@@ -24,15 +28,23 @@ const Thumbnail = ({ link, image, title }) => {
                 <img
                     className={style.image}
                     src={
-                        isHovered
-                            ? image + "meta/bright.jpg"
-                            : image + "meta/dark.jpg"
+                        !isMobile
+                            ? isHovered
+                                ? image + "meta/bright.jpg"
+                                : image + "meta/dark.jpg"
+                            : image + "meta/bright.jpg"
                     }
                     alt={title}
                 />
                 <span
                     className={style.title}
-                    style={{ visibility: isHovered ? "visible" : "hidden" }}
+                    style={{
+                        visibility: !isMobile
+                            ? isHovered
+                                ? "visible"
+                                : "hidden"
+                            : "visible",
+                    }}
                 >
                     {title}
                 </span>

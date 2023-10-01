@@ -2,6 +2,7 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+    width: 100%;
 }
 
 .board {
@@ -37,4 +38,8 @@
     background-color: aqua;
     width: 12.5rem;
     height: 6.25rem;
+}
+
+.mHeader img {
+    width: 8rem;
 }

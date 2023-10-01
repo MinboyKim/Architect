@@ -1,9 +1,12 @@
+import { useMediaQuery } from "react-responsive";
+
 import style from "./Introduction.module.css";
 
 const Introduction = () => {
+    const isMobile = useMediaQuery({ query: "(max-width: 768px)" });
     return (
         <div className={style.wrapper}>
-            <div className={style.dy}>
+            <div className={!isMobile ? style.dy : style.mDy}>
                 <img
                     src={`${process.env.PUBLIC_URL}/img/util/dy.png`}
                     alt="dy"
@@ -17,7 +20,7 @@ const Introduction = () => {
                 <div className={style.intro}>
                     Multidisciplinary Architectural Designer
                 </div>
-                <div className={style.contact}>
+                <div className={!isMobile ? style.contact : style.mContact}>
                     <span>Contact for Inquiries &nbsp;-</span>
                     <div className={style.contact__container}>
                         <a

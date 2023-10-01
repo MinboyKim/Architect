@@ -1,4 +1,4 @@
-import { Link } from "react-router-dom";
+import { useMediaQuery } from "react-responsive";
 
 import Thumbnail from "./Thumbnail";
 import { meta } from "../../db";
@@ -6,10 +6,13 @@ import { meta } from "../../db";
 import style from "./Academic.module.css";
 
 const Academic = () => {
+    const isMobile = useMediaQuery({
+        query: "(max-width:768px)",
+    });
     return (
         <div className={style.academicWrapper}>
             <h3 className={style.title}>ACADEMIC PROJECTS 2016 ~ 2023</h3>
-            <div className={style.container}>
+            <div className={!isMobile ? style.container : style.mContainer}>
                 {meta.map((project, index) => {
                     return (
                         <Thumbnail

@@ -9,13 +9,14 @@
     height: 100%;
 }
 
-.dy {
-    width: 15%;
+.dy img {
+    width: 8.125rem;
+    margin-right: 1.5rem;
 }
 
-.dy img {
-    width: 60%;
-    margin-left: 1.5rem;
+.mDy img {
+    width: 5.125rem;
+    margin-right: 1.5rem;
 }
 
 .mail {
@@ -46,6 +47,13 @@
     display: flex;
     margin-bottom: 1.25rem;
     height: 100%;
+}
+
+.mContact {
+    display: flex;
+    margin-bottom: 1.25rem;
+    height: 100%;
+    font-size: 12px;
 }
 
 .insta {

@@ -6,10 +6,42 @@
     align-items: center;
 }
 
+.mMain {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 3rem;
+}
+
 .divider {
     width: 5rem;
 }
 
+.mDivider {
+    margin-top: 3rem;
+}
+
 .border {
     border: 0.0625rem solid rgb(77, 77, 77);
+}
+
+.nav {
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    border: 0.0625rem solid black;
+    margin-top: 2.5rem;
+    margin-bottom: 2.5rem;
+    font-size: 1rem;
+    padding: 1.875rem;
+    box-sizing: border-box;
+}
+
+.navItem {
+    margin-bottom: 1.25rem;
 }
