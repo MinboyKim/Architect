@@ -24,7 +24,7 @@ function App() {
             className={`${isMobile ? "mApp" : "App"}`}
             onContextMenu={(e) => e.preventDefault()}
         >
-            <BrowserRouter>
+            <BrowserRouter basename={process.env.PUBLIC_URL}>
                 <ScrollToTop />
                 <div className={`${isMobile ? "mWrapper" : "wrapper"}`}>
                     <Header />
