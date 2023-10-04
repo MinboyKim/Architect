@@ -530,7 +530,7 @@ export const curriculumVitae = [
                 detail: "Honorable Mention",
             },
             {
-                year: "2021.09",
+                year: "2021. 09",
                 title: "KEPCO Daegu Headquarters Design Competition",
                 description: "Korea Electric Power Corporation",
                 detail: "1st Prize",
@@ -542,7 +542,7 @@ export const curriculumVitae = [
                 detail: "2nd Prize",
             },
             {
-                year: "2020.09",
+                year: "2020. 09",
                 title: "Architecture of The Abandoned Competition",
                 description: "The Big Thing",
                 detail: "Honorable Mention",
