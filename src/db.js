@@ -503,7 +503,7 @@ export const curriculumVitae = [
                 year: "2023. 09",
                 title: "2023 Steel-Modular Architectural Student Design Competition",
                 description: "Korea Iron & Steel Association",
-                detail: "수상예정",
+                detail: "4th Prize",
             },
             {
                 year: "2023. 09",
