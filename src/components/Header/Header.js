@@ -31,7 +31,7 @@ const Header = () => {
                     <Link to="/">
                         <img
                             className={style.headerImg}
-                            src={`${process.env.PUBLIC_URL}/img/main/logo.jpeg`}
+                            src={`${process.env.PUBLIC_URL}/img/main/logo.png`}
                         ></img>
                     </Link>
                     <div
@@ -46,14 +46,15 @@ const Header = () => {
                 <Link to="/">
                     <img
                         className={style.headerImg}
-                        src={`${process.env.PUBLIC_URL}/img/main/logo.jpeg`}
+                        src={`${process.env.PUBLIC_URL}/img/main/logo.png`}
+                        alt="popup"
                     ></img>
                 </Link>
             )}{" "}
             <Link to="/profile">
                 <img
                     className={style.logo}
-                    src={`${process.env.PUBLIC_URL}/img/main/popup.jpeg`}
+                    src={`${process.env.PUBLIC_URL}/img/main/popup.png`}
                 ></img>{" "}
             </Link>
         </header>

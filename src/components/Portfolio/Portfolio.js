@@ -56,7 +56,9 @@ const Portfolio = () => {
                                     <img
                                         src={imageUrl}
                                         alt={`Image ${index}`}
-                                        className={style.img}
+                                        className={`${style.img} ${
+                                            index !== 0 ? style.blur : ""
+                                        }`}
                                     />
                                 </div>
                             ))}
@@ -72,7 +74,9 @@ const Portfolio = () => {
                                     <img
                                         src={imageUrl}
                                         alt={`Image ${index}`}
-                                        className={style.mImg}
+                                        className={`${style.mImg} ${
+                                            index !== 0 ? style.blur : ""
+                                        }`}
                                     />
                                 </div>
                             ))}

@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import { useMediaQuery } from "react-responsive";
 
@@ -13,61 +13,68 @@ import { meta } from "./db";
 
 import "./App.css";
 import Project from "./components/Project/Project";
+import LandingImage from "./components/LandingImage/LandingImage";
 
 function App() {
     const isMobile = useMediaQuery({
         query: "(max-width:768px)",
     });
+    const [popup, setPopup] = useState(true);
+
+    const fadeOut = () => {
+        setPopup(false);
+    };
 
     return (
         <div
-            style={{
-                display: "flex",
-                justifyContent: "center",
-                alignItems: "center",
-            }}
+            className={`${isMobile ? "mApp" : "App"}`}
+            onContextMenu={(e) => e.preventDefault()}
         >
-            <img
-                src="/img/renewal.jpg"
-                alt="renewal"
-                style={{ width: "90%" }}
-            />
+            <LandingImage setPopup={fadeOut} />
+            <BrowserRouter basename={process.env.PUBLIC_URL}>
+                <ScrollToTop />
+                <div className={`${isMobile ? "mWrapper" : "wrapper"}`}>
+                    <Header />
+                    <div className={"main" + isMobile ? "pad" : ""}>
+                        <Routes>
+                            <Route path="/" element={<Main />}></Route>
+                            <Route
+                                path="/portfolio"
+                                element={<Portfolio />}
+                            ></Route>
+                            <Route
+                                path="/academic"
+                                element={<Academic popup={popup} />}
+                            ></Route>
+                            {meta.map((project, index) => {
+                                return (
+                                    <Route
+                                        key={index}
+                                        path={`/${project.link}`}
+                                        element={
+                                            <Project title={project.title} />
+                                        }
+                                    ></Route>
+                                );
+                            })}
+                            <Route
+                                path="/profile"
+                                element={<Profile popup={popup} />}
+                            ></Route>
+                            <Route
+                                path="/index.html"
+                                element={<Main />}
+                            ></Route>
+                            <Route
+                                path="*"
+                                element={<h1>404 Not Found 😭</h1>}
+                            ></Route>
+                        </Routes>
+                    </div>
+                    <Footer />
+                </div>
+            </BrowserRouter>
         </div>
-        // <div
-        //     className={`${isMobile ? "mApp" : "App"}`}
-        //     onContextMenu={(e) => e.preventDefault()}
-        // >
-        //     <BrowserRouter basename={process.env.PUBLIC_URL}>
-        //         <ScrollToTop />
-        //         <div className={`${isMobile ? "mWrapper" : "wrapper"}`}>
-        //             <Header />
-        //             <Routes>
-        //                 <Route path="/" element={<Main />}></Route>
-        //                 <Route
-        //                     path="/portfolio"
-        //                     element={<Portfolio />}
-        //                 ></Route>
-        //                 <Route path="/academic" element={<Academic />}></Route>
-        //                 {meta.map((project, index) => {
-        //                     return (
-        //                         <Route
-        //                             key={index}
-        //                             path={`/${project.link}`}
-        //                             element={<Project title={project.title} />}
-        //                         ></Route>
-        //                     );
-        //                 })}
-        //                 <Route path="/profile" element={<Profile />}></Route>
-        //                 <Route path="/index.html" element={<Main />}></Route>
-        //                 <Route
-        //                     path="*"
-        //                     element={<h1>404 Not Found 😭</h1>}
-        //                 ></Route>
-        //             </Routes>
-        //             <Footer />
-        //         </div>
-        //     </BrowserRouter>
-        // </div>
     );
 }
 

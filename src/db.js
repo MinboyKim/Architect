@@ -383,9 +383,36 @@ export const db = {
             `${prefix}20. The Adaptiveport/9.jpg`,
         ],
     },
+    "Portfolio Preview": {
+        title: `Portfolio Preview`,
+        content: `2023 PORTFOLIO PREVIEW IMAGES
+
+        Please contact for full version of Portfolio`,
+        img: [
+            `${prefix}21. Portfolio Preview/1.jpg`,
+            `${prefix}21. Portfolio Preview/2.jpg`,
+            `${prefix}21. Portfolio Preview/3.jpg`,
+            `${prefix}21. Portfolio Preview/4.jpg`,
+            `${prefix}21. Portfolio Preview/5.jpg`,
+            `${prefix}21. Portfolio Preview/6.jpg`,
+            `${prefix}21. Portfolio Preview/7.jpg`,
+            `${prefix}21. Portfolio Preview/8.jpg`,
+            `${prefix}21. Portfolio Preview/9.jpg`,
+            `${prefix}21. Portfolio Preview/10.jpg`,
+            `${prefix}21. Portfolio Preview/11.jpg`,
+            `${prefix}21. Portfolio Preview/12.jpg`,
+            `${prefix}21. Portfolio Preview/13.jpg`,
+            `${prefix}21. Portfolio Preview/14.jpg`,
+        ],
+    },
 };
 
 export const meta = [
+    {
+        link: "21",
+        image: "/img/projects/21. Portfolio Preview/",
+        title: "Portfolio Preview",
+    },
     {
         link: "20",
         image: "/img/projects/20. The Adaptiveport/",
@@ -525,7 +552,7 @@ export const curriculumVitae = [
             },
             {
                 year: "2022. 08",
-                title: "제 35회 공간 국제학생 건축상",
+                title: "35th SPACE Prize",
                 description: "空間 SPACE Group",
                 detail: "Honorable Mention",
             },
@@ -554,21 +581,23 @@ export const curriculumVitae = [
         experiences: [
             {
                 year: "2023",
-                title: "건축설계 인재육성사업 선정",
-                description: "국토교통부, KAIA",
+                title: "Selection of Architectural Design Talent Development Project",
+                description:
+                    "Ministry of Land, Infrastructure and Transport, KAIA",
                 detail: "",
             },
             {
                 year: "2023",
                 title: "2024 Graduation Exhibition of School of Architecture, Yeungnam University",
-                description: "대한건축사협회 대구광역시건축사회",
+                description:
+                    "Korea Institute of Registered Architects, Daegu Association",
                 detail: "Silver Prize",
             },
             {
                 year: "2019",
-                title: "지상작전사령부 병영도서관 인테리어 유공",
+                title: "Contribution for the Designing Military Base Library of Ground Operations Command",
                 description: "",
-                detail: "대령급 개인표창",
+                detail: "Colonel-level Commendation",
             },
         ],
     },

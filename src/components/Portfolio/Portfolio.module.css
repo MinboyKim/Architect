@@ -17,6 +17,10 @@
     object-fit: contain;
 }
 
+.blur {
+    filter: blur(1rem);
+}
+
 .mWrapper {
     display: flex;
     align-items: center;

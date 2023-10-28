@@ -1,0 +1,31 @@
+.landingImage {
+    width: 100%;
+    z-index: 99;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #000;
+    position: absolute;
+    top: 0;
+    left: 0;
+    transition: opacity 2s ease-in-out;
+}
+
+.img {
+    width: 90%;
+}
+
+.fadeOut {
+    opacity: 0;
+}
+
+.hfull {
+    height: 100%;
+    flex-direction: column;
+    position: fixed;
+}
+
+.escape {
+    width: 20%;
+    margin-top: 4rem;
+}

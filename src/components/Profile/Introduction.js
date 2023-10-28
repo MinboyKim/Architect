@@ -8,17 +8,16 @@ const Introduction = () => {
         <div className={style.wrapper}>
             <div className={!isMobile ? style.dy : style.mDy}>
                 <img
-                    src={`${process.env.PUBLIC_URL}/img/util/dy.png`}
+                    src={`${process.env.PUBLIC_URL}/img/util/dy.jpg`}
                     alt="dy"
                 />
             </div>
             <div className={style.content}>
                 <div className={style.name}>
-                    <span>김동영</span>
                     <span>KIM DONG YOUNG</span>
                 </div>
                 <div className={style.intro}>
-                    Multidisciplinary Architectural Designer
+                    Multidisciplinary Architecural Designer based in South Korea
                 </div>
                 <div className={!isMobile ? style.contact : style.mContact}>
                     <span>Contact for Inquiries &nbsp;-</span>

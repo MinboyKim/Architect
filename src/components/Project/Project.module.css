@@ -18,6 +18,10 @@
     object-fit: contain;
 }
 
+.blur {
+    filter: blur(1rem);
+}
+
 .mCarousel {
     width: 100%;
     height: auto;
