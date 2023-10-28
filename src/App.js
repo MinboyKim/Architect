@@ -21,40 +21,53 @@ function App() {
 
     return (
         <div
-            className={`${isMobile ? "mApp" : "App"}`}
-            onContextMenu={(e) => e.preventDefault()}
+            style={{
+                display: "flex",
+                justifyContent: "center",
+                alignItems: "center",
+            }}
         >
-            <BrowserRouter basename={process.env.PUBLIC_URL}>
-                <ScrollToTop />
-                <div className={`${isMobile ? "mWrapper" : "wrapper"}`}>
-                    <Header />
-                    <Routes>
-                        <Route path="/" element={<Main />}></Route>
-                        <Route
-                            path="/portfolio"
-                            element={<Portfolio />}
-                        ></Route>
-                        <Route path="/academic" element={<Academic />}></Route>
-                        {meta.map((project, index) => {
-                            return (
-                                <Route
-                                    key={index}
-                                    path={`/${project.link}`}
-                                    element={<Project title={project.title} />}
-                                ></Route>
-                            );
-                        })}
-                        <Route path="/profile" element={<Profile />}></Route>
-                        <Route path="/index.html" element={<Main />}></Route>
-                        <Route
-                            path="*"
-                            element={<h1>404 Not Found 😭</h1>}
-                        ></Route>
-                    </Routes>
-                    <Footer />
-                </div>
-            </BrowserRouter>
+            <img
+                src="/img/renewal.jpg"
+                alt="renewal"
+                style={{ width: "90%" }}
+            />
         </div>
+        // <div
+        //     className={`${isMobile ? "mApp" : "App"}`}
+        //     onContextMenu={(e) => e.preventDefault()}
+        // >
+        //     <BrowserRouter basename={process.env.PUBLIC_URL}>
+        //         <ScrollToTop />
+        //         <div className={`${isMobile ? "mWrapper" : "wrapper"}`}>
+        //             <Header />
+        //             <Routes>
+        //                 <Route path="/" element={<Main />}></Route>
+        //                 <Route
+        //                     path="/portfolio"
+        //                     element={<Portfolio />}
+        //                 ></Route>
+        //                 <Route path="/academic" element={<Academic />}></Route>
+        //                 {meta.map((project, index) => {
+        //                     return (
+        //                         <Route
+        //                             key={index}
+        //                             path={`/${project.link}`}
+        //                             element={<Project title={project.title} />}
+        //                         ></Route>
+        //                     );
+        //                 })}
+        //                 <Route path="/profile" element={<Profile />}></Route>
+        //                 <Route path="/index.html" element={<Main />}></Route>
+        //                 <Route
+        //                     path="*"
+        //                     element={<h1>404 Not Found 😭</h1>}
+        //                 ></Route>
+        //             </Routes>
+        //             <Footer />
+        //         </div>
+        //     </BrowserRouter>
+        // </div>
     );
 }
 
