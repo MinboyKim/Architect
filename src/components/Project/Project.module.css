@@ -3,7 +3,7 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    margin-top: 14rem;
+    margin-top: 5rem;
     font-size: 16px;
 }
 
@@ -73,4 +73,8 @@
 
 .text {
     text-align: center;
+}
+
+.marginTop {
+    margin-top: 10.96rem;
 }

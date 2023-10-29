@@ -49,7 +49,7 @@ const Project = ({ title }) => {
     const projectImages = db[title].img;
 
     return (
-        <div className={style.wrapper}>
+        <div className={`${style.wrapper} ${!isMobile && style.marginTop}`}>
             {!isMobile ? (
                 <div className={style.carousel}>
                     <Slider {...settings}>
