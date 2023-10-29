@@ -2,7 +2,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    margin-top: 6.25rem;
+    margin-top: 14rem;
     width: 100%;
 }
 
@@ -18,7 +18,7 @@
 }
 
 .blur {
-    filter: blur(1rem);
+    filter: blur(0.4rem);
 }
 
 .mWrapper {
