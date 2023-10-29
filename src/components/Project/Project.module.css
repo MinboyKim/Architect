@@ -19,7 +19,7 @@
 }
 
 .blur {
-    filter: blur(1rem);
+    filter: blur(0.4rem);
 }
 
 .mCarousel {

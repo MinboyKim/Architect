@@ -59,7 +59,10 @@ const Project = ({ title }) => {
                                     src={imageUrl}
                                     alt={`Image ${index}`}
                                     className={`${style.img} ${
-                                        index !== 0 && !imageUrl.includes("21")
+                                        index !== 0 &&
+                                        !imageUrl.includes("Preview") &&
+                                        !imageUrl.includes("Artworks") &&
+                                        !imageUrl.includes("Military")
                                             ? style.blur
                                             : ""
                                     }`}
@@ -77,7 +80,12 @@ const Project = ({ title }) => {
                                     src={imageUrl}
                                     alt={`Image ${index}`}
                                     className={`${style.mImg} ${
-                                        index !== 0 ? style.blur : ""
+                                        index !== 0 &&
+                                        !imageUrl.includes("Preview") &&
+                                        !imageUrl.includes("Artworks") &&
+                                        !imageUrl.includes("Military")
+                                            ? style.blur
+                                            : ""
                                     }`}
                                 />
                             </div>
