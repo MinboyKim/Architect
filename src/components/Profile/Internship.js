@@ -15,7 +15,7 @@ const Internship = () => {
             </div>
             <div className={!isMobile ? style.content : style.mContent}>
                 <div className={style.title}>
-                    SOME Architectes, Seoul - Internship
+                    SOME architects, Seoul - Internship
                 </div>
                 <div className={style.description}>
                     <ul className={!isMobile ? style.list : style.mList}>
