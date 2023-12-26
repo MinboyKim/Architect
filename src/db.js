@@ -580,21 +580,28 @@ export const curriculumVitae = [
         name: "ACHIEVEMENTS",
         experiences: [
             {
-                year: "2023",
-                title: "Selection of Architectural Design Talent Development Project",
+                year: "2023. 12",
+                title: "Awarded the Minister's Prize",
                 description:
                     "Ministry of Land, Infrastructure and Transport, KAIA",
                 detail: "",
             },
             {
-                year: "2023",
+                year: "2023. 07",
                 title: "2024 Graduation Exhibition of School of Architecture, Yeungnam University",
                 description:
                     "Korea Institute of Registered Architects, Daegu Association",
                 detail: "Silver Prize",
             },
             {
-                year: "2019",
+                year: "2022. 10",
+                title: "Selection of Architectural Design Talent Development Project",
+                description:
+                    "Ministry of Land, Infrastructure and Transport, KAIA",
+                detail: "",
+            },
+            {
+                year: "2019. 02",
                 title: "Contribution for the Designing Military Base Library of Ground Operations Command",
                 description: "",
                 detail: "Colonel-level Commendation",
