@@ -581,10 +581,10 @@ export const curriculumVitae = [
         experiences: [
             {
                 year: "2023. 12",
-                title: "Awarded the Minister's Prize",
+                title: "First place in projects",
                 description:
                     "Ministry of Land, Infrastructure and Transport, KAIA",
-                detail: "",
+                detail: "Minister's Prize",
             },
             {
                 year: "2023. 07",
