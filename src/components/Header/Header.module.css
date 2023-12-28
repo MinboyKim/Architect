@@ -16,12 +16,15 @@
     position: absolute;
 }
 
-.logo {
-    width: 9.6rem;
-}
-
 .headerImg {
     width: 10.6rem;
+    margin-top: 0.625rem;
+    margin-bottom: 0.5rem;
+    cursor: pointer;
+}
+
+.mHeaderImg {
+    width: 8rem;
     margin-top: 0.625rem;
     margin-bottom: 0.5rem;
     cursor: pointer;
@@ -47,6 +50,9 @@
 }
 
 .mHeader img {
-    width: 8rem;
     background-color: #000;
+}
+
+.logo {
+    width: 4.5rem;
 }

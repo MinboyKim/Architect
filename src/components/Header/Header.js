@@ -45,7 +45,7 @@ const Header = () => {
             ) : (
                 <Link to="/">
                     <img
-                        className={style.headerImg}
+                        className={style.mHeaderImg}
                         src={`${process.env.PUBLIC_URL}/img/main/logo.png`}
                         alt="popup"
                     ></img>
